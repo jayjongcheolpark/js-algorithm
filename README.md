@@ -1,1 +1,1 @@
-# AlgoCasts
+# JavaScript Algorithm Study
