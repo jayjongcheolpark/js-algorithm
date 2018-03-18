@@ -14,6 +14,21 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+  const midPoint = Math.floor((2 * n - 1) / 2)
 
-module.exports = pyramid;
+  for (let row = 0; row < n; row += 1) {
+    let level = ''
+
+    for (let col = 0; col < 2 * n - 1; col += 1) {
+      if (midPoint - row <= col && midPoint + row >= col) {
+        level += '#'
+      } else {
+        level += ' '
+      }
+    }
+    console.log(level)
+  }
+}
+
+module.exports = pyramid
