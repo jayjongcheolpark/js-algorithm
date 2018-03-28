@@ -1,1 +1,1 @@
-# JavaScript Algorithm Study
+# JavaScript Algorithm Practice For Interview
