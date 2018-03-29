@@ -12,11 +12,11 @@ function vowels(str) {
 
   const checker = 'aeiou'
 
-  for (const char of str.toLowerCase()) {
+  str.toLowerCase().split('').forEach(char => {
     if (checker.includes(char)) {
-      count++
+      count += 1
     }
-  }
+  })
   return count
 }
 
