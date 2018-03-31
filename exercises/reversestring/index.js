@@ -20,7 +20,7 @@
 // }
 
 function reverse(str) {
-  return str.split('').reduce((rev, char) => char + rev, '')
+  return str.split('').reduce((rev, char) => char + rev, '');
 }
 
-module.exports = reverse
+module.exports = reverse;
