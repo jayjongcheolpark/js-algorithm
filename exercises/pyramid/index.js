@@ -33,22 +33,22 @@
 
 function pyramid(n, row = 0, level = '') {
   if (row === n) {
-    return
+    return;
   }
 
   if (level.length === 2 * n - 1) {
-    console.log(level)
-    return pyramid(n, row + 1)
+    console.log(level);
+    return pyramid(n, row + 1);
   }
 
-  const midPoint = Math.floor((2 * n - 1) / 2)
-  let add
+  const midPoint = Math.floor((2 * n - 1) / 2);
+  let add;
   if (midPoint - row <= level.length && midPoint + row >= level.length) {
-    add = '#'
+    add = '#';
   } else {
-    add = ' '
+    add = ' ';
   }
-  return pyramid(n, row, level + add)
+  return pyramid(n, row, level + add);
 }
 
-module.exports = pyramid
+module.exports = pyramid;
