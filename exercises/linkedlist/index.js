@@ -17,6 +17,18 @@ class LinkedList {
   insertFirst(data) {
     this.head = new Node(data, this.head);
   }
+
+  size() {
+    let counter = 0;
+    let node = this.head;
+
+    while (node) {
+      counter += 1;
+      node = node.next;
+    }
+
+    return counter;
+  }
 }
 
 module.exports = { Node, LinkedList };
