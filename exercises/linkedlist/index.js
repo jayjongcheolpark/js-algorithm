@@ -18,6 +18,10 @@ class LinkedList {
     this.head = new Node(data, this.head);
   }
 
+  getFirst() {
+    return this.head;
+  }
+
   size() {
     let counter = 0;
     let node = this.head;
