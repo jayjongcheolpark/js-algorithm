@@ -23,7 +23,7 @@ class LinkedList {
     let node = this.head;
 
     while (node) {
-      counter++;
+      counter += 1;
       node = node.next;
     }
 
